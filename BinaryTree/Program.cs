@@ -20,7 +20,14 @@ namespace BinaryTree
             }
             tree.Print();
         Console.WriteLine($"Минимальное значение в дереве:{tree.MinValue()}");
-        Console.WriteLine($"Максимальное значение в дереве:{tree.MaxValue()}" );
+        Console.WriteLine($"Максимальное значение в дереве:{tree.MaxValue()}");
+        Console.WriteLine($"Сумма элементов в дереве: {tree.Sum()}");
+        Console.WriteLine($"Глубина дерева:{tree.Depth()}");
+
+            Console.Write("Введите удаляемое значение: ");
+            int value = Convert.ToInt32(Console.ReadLine());
+            tree.Erase(value);
+            tree.Print();
         }
     }
 }
