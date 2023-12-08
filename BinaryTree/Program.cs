@@ -28,6 +28,7 @@ namespace BinaryTree
             int value = Convert.ToInt32(Console.ReadLine());
             tree.Erase(value);
             tree.Print();
+            tree.PrintTreeLikeATree();
         }
     }
 }

@@ -149,5 +149,40 @@ namespace BinaryTree
             Console.Write(Root.Data + "\t");
             Print(Root.pRight);
         }
+        public void PrintTreeLikeATree()
+        {
+            PrintTreeLikeATree(Root);
+            Console.WriteLine();
+        }
+        void PrintTreeLikeATree(Element Root, int padding = 0)
+        {
+            if (Root != null)
+            {
+                if (Root.pRight != null)
+                {
+                    PrintTreeLikeATree(Root.pRight, padding + 4);
+                }
+                if (padding > 0)
+                {
+                    Console.Write(" ".PadLeft(padding));
+                }
+                if (Root.pRight != null)
+                {
+                    Console.Write("/\n");
+                    Console.Write(" ".PadLeft(padding));
+                }
+                Console.Write(Root.Data.ToString() + "\n ");
+                if (Root.pLeft != null)
+                {
+                    Console.Write(" ".PadLeft(padding) + "\\\n");
+                    PrintTreeLikeATree(Root.pLeft, padding + 4);
+
+                }
+            }
+        }
+        
     }
+    
 }
+          
+    
