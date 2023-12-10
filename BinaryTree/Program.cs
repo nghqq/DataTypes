@@ -31,6 +31,7 @@ namespace BinaryTree
             {
                 sw.Start();
                 Console.WriteLine($"Минимальное значение в дереве:{tree.MinValue()}");
+                
                 Console.WriteLine($"Максимальное значение в дереве:{tree.MaxValue()}");
                 Console.WriteLine($"Сумма элементов в дереве: {tree.Sum()}");
                 Console.WriteLine($"Глубина дерева:{tree.Depth()}");
