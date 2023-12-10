@@ -77,6 +77,8 @@ namespace BinaryTree
                 {
                     if (Root.Equals(Parent.pLeft)) Parent.pLeft = null;
                     if (Root.Equals(Parent.pRight)) Parent.pRight = null;
+                    // Equals проверяет объекты на идентичность. Если они идентичны возвращает true.
+                    // Если объекты разные возвращает false.
                     Root = null;
                     GC.Collect(1);
                 }
@@ -105,7 +107,7 @@ namespace BinaryTree
             GC.Collect(1);
         }
 
-        public int MinValue() => MinValue(Root);
+        public int MinValue() => MinValue(Root); // => это return 
         int MinValue(Element Root)
         {
             if (Root == null) throw new Exception("Tree is empty in MinValue");
