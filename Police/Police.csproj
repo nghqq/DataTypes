@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9CED5F79-2E46-4291-8944-C970FB7B6072}</ProjectGuid>
+    <ProjectGuid>{B3F18430-5471-4C1F-ACC8-273025324573}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BinaryTree</RootNamespace>
-    <AssemblyName>BinaryTree</AssemblyName>
+    <RootNamespace>Police</RootNamespace>
+    <AssemblyName>Police</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TreePerformance.cs" />
-    <Compile Include="UniqueTree.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Crime.cs" />
+    <Compile Include="LicencePlate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tree.cs" />
+    <Compile Include="Violations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
