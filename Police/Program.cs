@@ -1,5 +1,5 @@
-﻿#define SAVE_CHECK
-//#define LOAD_CHECK
+﻿//#define SAVE_CHECK
+#define LOAD_CHECK
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,9 +76,9 @@ namespace Police
 			@base.Save("base.txt"); 
 #endif
 
-            //Base @base = new Base();
-            //@base.Load("Base.txt");
-            //@base.Print();
+            Base @base = new Base();
+            @base.Load("Base.txt");
+            @base.Print();
         }
         const string delimiter = "\n------------------------------------\n";
     }
